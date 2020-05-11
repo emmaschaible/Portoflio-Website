@@ -1,0 +1,398 @@
+
+@charset"UTF-8";
+/*--------------------------------------------------------------
+>>> CSS STANDARDS
+----------------------------------------------------------------
+1. Place in appropriate section
+2. Add new sections to the Table of Contents as needed
+3. Order properties consistently inside each declaration i.e. alphabetically or by function 
+4. Declaration selectors should each occupy a new line
+5. Enter one new line between rules
+6. Enter more than one new line between categories 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment	    
+        - Color
+        - Size
+
+--------------------------------------------------------------*/
+*{
+
+}
+
+html, body {
+}
+/*--------------------------------------------------------------
+4.0 - ELEMENTS 
+-------------------------------------------------------------- */
+/*---- TYPOGRAPHY ---- */
+
+h1, h2, a{
+        font-family: 'Tinos', serif;
+        font-weight: 700;
+}
+
+h1 {
+        font-size: 5em;
+        line-height: .7em;
+}
+
+h2 {
+        font-size: 2.5em;
+}
+
+#social-media {
+        float: left; 
+}
+
+.hero {
+        color: white;
+}
+
+h2, .client-name, #social-media a{
+        color:  rgb(170, 82, 42);
+}
+
+p {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.2em;
+}
+
+.client-name {
+        font-style: italic;
+        font-size: 1em;
+}
+
+.project-type {
+        color: rgb(184, 184, 184);
+        font-size: .8em;
+}
+
+span {
+        content: "\00B7";
+      }
+
+#sunflower > section > div > div > div > p:nth-child(3) {
+        font-size: 1.2em;
+        font-weight: 500;
+}
+
+#sunflower > section > div > div > div > p:nth-child(2) {
+        font-size: 1.5em;
+}
+
+#social-media ul li {
+        font-size: .9em;
+}
+
+#border p {
+        text-align: center;
+        color: rgb(224, 155, 122);
+        font-size: .6em;
+}
+
+
+
+/*---- LISTS ---- */
+
+
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      
+li {
+  display: block;
+}
+
+li {
+        float: right;
+        display: block;
+      }
+      
+header ul a, footer ul a {
+        padding: 0 3em;
+}
+
+#social-media ul li{
+        margin: 1em .5em 0 0;
+}
+
+
+
+ ul > li > a {
+        color: white;
+}
+
+ ul > li > a:hover, #social-media a:hover {
+        transition-duration: 0.3s;
+        color: rgb(224, 155, 122);
+}
+
+#border {
+        height: 3em;
+        background-color: rgb(170, 82, 42);
+}
+
+.fa-linkedin, .fa-instagram-square {
+        color: rgb(170, 82, 42);
+      }
+    
+.fa-linkedin:hover, .fa-instagram-square:hover {
+        color: rgb(224, 155, 122);
+      }
+
+#social-media {
+        padding-left: 4em;
+}
+
+/*--------------------------------------------------------------
+5.0 - OBJECTS 
+-------------------------------------------------------------- */
+
+/*---- FRAMEWORK ---- */
+
+#im-emma {
+        background-image: url("../img/topographic-background-1.jpg");
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, repeat;
+      }
+
+
+#project-background {
+        background-image: url("../img/topographic-background-2.jpg");
+        background-position: left bottom;
+        background-repeat: no-repeat, repeat;
+      }
+
+
+.btn a {
+        transition-duration: 0.4s;
+        padding: .5em 1em;
+        background-color: rgb(170, 82, 42);
+        color: white;
+      }
+      
+.btn a:hover {
+        background-color: rgb(224, 155, 122)
+      }
+
+
+#sunflower > section > div > div > div {
+        margin: 0 auto;
+}
+
+h2, #im-emma > div > div:nth-child(2) > p:nth-child(2){
+        padding-bottom: .5em;
+}
+
+header {
+        margin: 0 auto;
+}
+
+
+
+
+
+
+
+body > header > section > div > div > div{
+        margin: 0 auto;
+}
+
+body > section.grid-container > div > div.cell.small-12.large-5 {
+        padding-top: 4em;
+}
+
+
+
+
+
+.grid-container {
+        margin: 200px 50px 50px;
+}
+
+.hero {
+        text-align: center;
+}
+
+
+
+#sunflower {
+        background-image: url("../img/sunflower-picture.jpg");
+        padding-bottom: 3em;
+       }
+
+#orange {
+        background-color: rgb(170, 82, 42);
+        padding-bottom: 5em;
+}
+
+
+#backgroundcolor {
+        background-color: rgb(170, 82, 42);
+        margin-bottom: 3em;
+}
+
+
+body > section > div > div:nth-child(1) > img {
+        float: left;
+        padding-right: 3em;
+}
+
+body {
+        margin:
+}
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+        #social-media {
+                float: left;
+        }
+}
+
+
+@media screen and (min-width: 1170px) {
+        #row-1, #row-2 {
+                margin-bottom: .3em;
+        }
+
+        p {
+                font-size: .9rem;
+        }
+
+        h1 {
+                font-size: 4em;  
+          }
+          
+        h2 {
+                  font-size: 2em;
+          }
+
+        header > section > div > div > div > p:nth-child(3) {
+                font-size: 1.2em;
+                font-weight: 500;
+        }
+        
+        header > section > div > div > div > p:nth-child(2) {
+                font-size: 2em;
+        }
+
+        #social-media {
+                padding-left: 11em;
+        }
+        
+      }
+
+
+
+
+
+
+
+/* overlay on projects - home */
+
+      .container {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0, 0, 0, 0.507);
+      }
+      
+      .container:hover .overlay {
+        opacity: 1;
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+
+
+      
+/*image grid - projects*/
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
